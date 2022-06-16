@@ -1,12 +1,10 @@
 module.exports = {
-    roots: [
-      '/src'
-    ],
+    roots: ['<rootDir>/src'],
   
     clearMocks: true,
     coverageDirectory: 'coverage',
     coverageProvider: "v8",
-    collectCoverageFrom: ['/src/**/*.ts'],
+    collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
     testEnvironment: 'node',
     transform: {
       '.+\\.ts$': 'ts-jest'  
